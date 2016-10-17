@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (3.0.0)
+  - XHImageViewer (0.1.2)
+
+DEPENDENCIES:
+  - SnapKit (~> 3.0.0)
+  - XHImageViewer (= 0.1.2)
+
+SPEC CHECKSUMS:
+  SnapKit: 98af0a4e9369d3c58f758967518081dbdc7eb1d9
+  XHImageViewer: 7b275d2aa829e56761c30303b9d51cae086a90b9
+
+PODFILE CHECKSUM: c0bcda3c9774e53ec3b544683d3963274ae17ca8
+
+COCOAPODS: 1.0.1

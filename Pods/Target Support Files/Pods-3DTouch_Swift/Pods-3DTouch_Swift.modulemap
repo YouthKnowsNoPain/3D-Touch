@@ -1,0 +1,6 @@
+framework module Pods_3DTouch_Swift {
+  umbrella header "Pods-3DTouch_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

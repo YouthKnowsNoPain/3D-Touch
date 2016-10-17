@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Eph-uR-c10">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DTouch_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="lPN-Pk-zUr">
+                        <barButtonItem key="leftBarButtonItem" title="First" id="jlU-4C-2dL">
+                            <connections>
+                                <segue destination="fph-xN-1EU" kind="push" id="437-1h-LYJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Second" id="raH-DZ-rtO">
+                            <connections>
+                                <segue destination="SYW-t3-fGQ" kind="push" id="qKQ-xE-JsO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="-860"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="ifw-g5-EdZ">
+            <objects>
+                <viewController storyboardIdentifier="Second" title="Second" id="SYW-t3-fGQ" customClass="SecondViewController" customModule="_DTouch_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0g-hs-9HD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d19-Gf-qQr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fpk-wk-1Hp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRm-Vt-2Uz">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FOK-D4-Eh0"/>
+                                </constraints>
+                                <state key="normal" title="3DTouch_Web"/>
+                                <connections>
+                                    <segue destination="XIO-ga-YjX" kind="push" id="A3L-yw-IEH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zh-GV-wQT">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h7a-Ea-LS0"/>
+                                </constraints>
+                                <state key="normal" title="safari"/>
+                                <connections>
+                                    <action selector="openUrlWithSafari:" destination="SYW-t3-fGQ" eventType="touchUpInside" id="yhC-hJ-BXs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3zh-GV-wQT" firstAttribute="top" secondItem="WRm-Vt-2Uz" secondAttribute="bottom" constant="90" id="4aJ-uC-laX"/>
+                            <constraint firstItem="WRm-Vt-2Uz" firstAttribute="centerY" secondItem="Fpk-wk-1Hp" secondAttribute="centerY" id="6pq-r8-mFM"/>
+                            <constraint firstAttribute="trailing" secondItem="WRm-Vt-2Uz" secondAttribute="trailing" constant="20" id="OIz-Kh-gwZ"/>
+                            <constraint firstItem="3zh-GV-wQT" firstAttribute="leading" secondItem="Fpk-wk-1Hp" secondAttribute="leading" constant="20" id="WPO-zh-OD5"/>
+                            <constraint firstItem="WRm-Vt-2Uz" firstAttribute="leading" secondItem="Fpk-wk-1Hp" secondAttribute="leading" constant="20" id="Yuc-Ad-Fp0"/>
+                            <constraint firstAttribute="trailing" secondItem="3zh-GV-wQT" secondAttribute="trailing" constant="20" id="pr9-QL-VM7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="eUk-Of-7SJ">
+                        <barButtonItem key="rightBarButtonItem" title="change" id="7TP-ht-5cq">
+                            <connections>
+                                <action selector="changeShortchuItem:" destination="SYW-t3-fGQ" id="87u-C5-PGG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="goToSafari" destination="3zh-GV-wQT" id="PJ7-M3-1NP"/>
+                        <outlet property="goToWeb" destination="WRm-Vt-2Uz" id="8x4-7h-ovJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyg-pj-YuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-662"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="Hmb-F9-JVo">
+            <objects>
+                <viewController storyboardIdentifier="First" title="First" id="fph-xN-1EU" customClass="FirstViewController" customModule="_DTouch_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2l2-LM-nGM"/>
+                        <viewControllerLayoutGuide type="bottom" id="ecc-Oj-kXI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ddy-n5-Mli">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCz-Jv-3Ie">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="BOQ-3V-m8V"/>
+                                    <constraint firstAttribute="height" constant="30" id="iHH-lK-zd8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Rk9-oD-mQF" kind="push" id="gfy-Ay-Qd0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vCz-Jv-3Ie" firstAttribute="centerX" secondItem="ddy-n5-Mli" secondAttribute="centerX" id="GFU-Ya-G76"/>
+                            <constraint firstItem="vCz-Jv-3Ie" firstAttribute="centerY" secondItem="ddy-n5-Mli" secondAttribute="centerY" id="SFn-aU-pzz"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="First" id="lE2-WD-E1F"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GV-as-giP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-1306"/>
+        </scene>
+        <!--PeekAndPop-->
+        <scene sceneID="pnC-ot-pMa">
+            <objects>
+                <viewController storyboardIdentifier="PeekAnPop" title="PeekAndPop" id="Rk9-oD-mQF" customClass="PeekAndPopViewController" customModule="_DTouch_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DGM-bg-4HN"/>
+                        <viewControllerLayoutGuide type="bottom" id="dzl-cC-tpQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eyQ-bh-QhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PeekAndPop" id="63Y-qD-hAT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LU-ay-GXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="-1307"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="fFd-0V-NkT">
+            <objects>
+                <viewController storyboardIdentifier="WebPreviewing" automaticallyAdjustsScrollViewInsets="NO" id="XIO-ga-YjX" customClass="WebPreviewingViewController" customModule="_DTouch_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="73x-XE-u7E"/>
+                        <viewControllerLayoutGuide type="bottom" id="IR6-cq-KvD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QXv-mf-2xa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Web" id="Nal-RK-5vE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8n-de-KzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616.79999999999995" y="-663.41829085457277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZIh-pI-g1j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eph-uR-c10" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DxM-fR-pQC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0tO-9l-sBp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwU-6h-E2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847" y="-859"/>
+        </scene>
+    </scenes>
+</document>
